@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i');
+@import "app.mixin.scss";
+@import "app.vars.scss";
+
+
+body {
+	background-size: cover;
+    background-color: #222233;
+	@include fontStack($size:14px, $family: 'Roboto');
+	margin-top: 70px; 
+}
+@media(max-width: 768px){
+   body{
+     margin-top:180px;
+    }
+ }
+.navbar-default {
+	background-color: whitesmoke;
+}
+li {
+    display: block;
+    color: $lightColor;
+    text-align: center;
+    //padding: 14px 16px;
+    text-decoration: none;
+    float:left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    //overflow: hidden;
+    font-size: 20px;
+}
+
+.container {
+	width: 300px;
+	margin:100px auto;
+	margin-top: auto;
+	background: rgba(15,50,50,0.5);
+	border-radius: 15px;
+	padding: 20px;	 
+}
+
+h1 {
+	@include fontStack($family: 'Roboto', $size:60px);
+    color: $whiteGrey;
+    margin: auto;
+    
+}
+
+form p {
+	color:  $whiteGrey;
+}
+
+label {
+	display: $whiteGrey;
+	margin-bottom:5px;
+	color: $whiteGrey;
+    font-weight: bold;
+}
+input:not([type=submit]):not([type=checkbox]), select, textarea {
+	color: black;
+	font: inherit;
+	padding: 5px;
+	border: 1px #ccc solid;
+	width: 95%;
+	box-shadow: inset 0 1px 3px #ddd;
+	border-radius: 5px;
+}
+select {
+	width:100%;
+}
+input[type=submit] {
+	@include fontStack('Roboto', 14px);
+	width: 100%;
+	padding: 0px;
+	color: #222233;
+	border: 0;
+	border-radius: 5px;
+	height: 20px;
+	
+	
+	&:hover {
+		background-color: black;
+        color:$lightColor;
+	}	
+
+}

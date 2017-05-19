@@ -1,0 +1,64 @@
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Airways</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a routerLink="/travels" routerLinkActive="active">Admin</a></li>
+    </ul>
+  </div>
+</nav> 
+  <!--button (click)="onGet()"> get </button!-->
+  <div class="container">
+		<h1>{{title}}</h1>
+		<form #tform="ngForm">
+      <p> 
+        <label> Departure city </label>
+        <br>
+        <input name="title" type="text" placeholder="Departure city" required pattern="[a-zA-Z]{1,}">
+      </p>
+
+      <p> 
+        <label> Destination city </label>
+        <input type="text" placeholder="Destination city" maxlength="50" required pattern="[a-zA-Z]{1,}">
+      </p>
+
+      <p> 
+        <label> Departure date </label>
+        <input id="datepicker" type="date" placeholder="Departure date"required onkeydown="return false">
+      </p>
+
+      <p> 
+        <label> Return flight </label>
+        <input class="returnFlight" type="checkbox" name="returnFlight" [(ngModel)]="checkbox">
+      </p>
+
+      <p class="returnDate" *ngIf="checkbox"> 
+        <label> Return date </label>
+        <input name="title" id="datepicker" type="date" placeholder="return date" required [(ngModel)]="date" onkeydown="return false">
+      </p>
+
+      <p> 
+      <label> Number of passengers </label>
+      <input type="number" value=1 required min="1" max ="99">
+      </p>
+
+      <p>
+      <label> Ticket type </label>
+      <select>
+        <option> Economy </option>
+        <option> Business class </option>
+        <option> First Class </option>
+      </select>
+      </p>
+
+      <p>
+      <input type="submit" value="Search">
+      </p>
+		</form>
+	</div>
+
+  <!--<app-travel> </app-travel> -->
+  
+

@@ -1,0 +1,10 @@
+/* This file contains only a fontStack to easily include different font types by passing parameters.
+if no parameters are passed, the default values "Roboto", "14px" and "400" are picked */
+
+@mixin fontStack($family:'Roboto', $size:'14px', $weight:'400') {
+	font: {
+		family: $family;
+		size: $size;
+		weight: $weight;
+		}	
+}

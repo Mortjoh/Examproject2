@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i');
+@import "app/app.mixin.scss";
+body {
+    background-size: cover;
+    background-color: #222233;
+	@include fontStack($size:14px, $family: 'Roboto');
+    //overflow:hidden;
+}
