@@ -11,8 +11,5 @@ export class AppComponent {
   title = 'Tickets';
   date:any;
   checkbox:boolean;
-
-  
-
 }
 

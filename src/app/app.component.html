@@ -4,12 +4,11 @@
       <a class="navbar-brand" href="#">Airways</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a routerLink="/travels" routerLinkActive="active">Admin</a></li>
+      <li><a routerLink="/home">Home</a></li>
+      <li><a routerLink="/admin">Admin</a></li>
     </ul>
   </div>
 </nav> 
-  <!--button (click)="onGet()"> get </button!-->
   <div class="container">
 		<h1>{{title}}</h1>
 		<form #tform="ngForm">
@@ -58,7 +57,8 @@
       </p>
 		</form>
 	</div>
-
-  <!--<app-travel> </app-travel> -->
+  <hr>
+<app-travel> </app-travel>
+ 
   
 

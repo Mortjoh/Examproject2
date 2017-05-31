@@ -1,3 +1,82 @@
-.container{
-    background-color: white;
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i');
+@import "app.mixin.scss";
+@import "app.vars.scss";
+#datSubmit{
+    @include fontStack('Roboto', 14px);
+	width: 100%;
+	padding: 0px;
+	color: #222233;
+	border: 0;
+	border-radius: 5px;
+	height: 20px;
+	//animation-name: test;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	margin-top: 10px;
+    transition: height 2s;
+	
+	&:hover {
+		background-color: black;
+        color:$lightColor;
+        height: 30px;
+	}
+}
+form {
+    background-size: cover;
+    background-color: #222233;
+	@include fontStack($size:14px, $family: 'Roboto');
+	//margin-top: 70px; 
+    width: 300px;
+	margin:100px auto;
+	margin-top: auto;
+	background: rgba(15,50,50,0.5);
+	border-radius: 15px;
+	padding: 20px;	   
+}
+table {
+    background-size: cover;
+    background-color: #222233;
+	@include fontStack($size:14px, $family: 'Roboto');
+	margin-top: 70px; 
+    width: 1000px;
+	margin:100px auto;
+	margin-top: auto;
+	background: rgba(15,50,50,0.5);
+	border-radius: 15px;
+	padding: 20px;	  
+    color:whitesmoke;
+}
+label {
+	display: $whiteGrey;
+	margin-bottom:5px;
+	color: $whiteGrey;
+    font-weight: bold;
+}
+input:not([type=submit]):not([type=checkbox]), select, textarea {
+	color: black;
+	font: inherit;
+	padding: 5px;
+	border: 1px #ccc solid;
+	width: 95%;
+	box-shadow: inset 0 1px 3px #ddd;
+	border-radius: 5px;
+}
+.wrap {
+	    text-align: center;
+		
+}
+#butt{
+	background-size: cover;
+   // background-color: #222233;
+	@include fontStack($size:14px, $family: 'Roboto');
+	//margin-top: 70px; 
+    width: 150px;
+	margin-top: auto;
+	background: rgba(15,50,50,0.5);
+	border-radius: 15px;
+	padding: 20px;
+	color:whitesmoke;
+}
+#sub {
+	color:$whiteGrey;
 }

@@ -80,6 +80,9 @@ input[type=submit] {
 	border: 0;
 	border-radius: 5px;
 	height: 20px;
+	//animation-name: test;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
 	
 	
 	&:hover {
@@ -87,4 +90,10 @@ input[type=submit] {
         color:$lightColor;
 	}	
 
+}
+@keyframes test {
+	 0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}	
 }
